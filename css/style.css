@@ -142,6 +142,13 @@ a:active {
   color: white;
   filter: drop-shadow(0 0 0.75rem crimson);
   padding: 10px;
+ 
+}
+.shop-list{
+  max-height: 100vh;
+  overflow-y: auto;
+  padding: 0px 15px;
+  margin-bottom: 50px;
 }
 .head-shop {
   text-align: center;

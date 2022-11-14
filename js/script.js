@@ -15,6 +15,8 @@ let uyari = document.querySelector(".uyari")
 let countries = document.querySelector("#countries")
 let countryFlag = document.querySelector("#countryflag")
 let defaultimage = document.querySelector("#defaultimage")
+let shopList = document.querySelector(".shop-list")
+let card = document.getElementsByClassName("card")
 let arr = []
 let countriesData = []
 
@@ -41,6 +43,44 @@ let cardsValue = [
     },
 ]
 
+let shopListing = [
+    {
+        image: "triple-bundle.jpg",
+        url: "https://www.etsy.com/listing/1329125262/special-triple-bundle-fifa-football",
+        desc: "This product will offer you 3 different designs in 3 formats (JPG, PNG or PDF) you want. Please consider this. Customizable FIFA 2023 football card Blue Gold Fut Card, Fifa Card 2023",
+        title: "Special Triple Bundle Fifa Football Cards, Fut Card High Definition, Special Gift Cards - Gold - Blue Gold - Black Gold - Gift Soccer Cards"
+    },
+    {
+        image: "gold.jpg",
+        url: "https://www.etsy.com/listing/1334416295/special-fifa-football-cards-high",
+        desc: "This product is a digital product. It will be designed individually. It is not possible to refund. The product is delivered within 1-3 days from the moment the requested information is sent.",
+        title: "Special Fifa Football Cards High Definition, Special Gift Cards, Special Days Gift Cards, Gold Color Gift Soccer Cards"
+    },
+    {
+        image: "black-gold.jpg",
+        url: "https://www.etsy.com/listing/1343096941/football-fifa-soccer-cards-fut-card-high",
+        desc: "Customizable FIFA 2023 football card Black Gold Fut Card, Fifa Card 2023. The designs will be sent to you in 3 formats of your choice. Formats include, JPG,PNG and PDF",
+        title: "Football Fifa Soccer Cards, Fut Card High Definition, Special Gift Cards, Special Days Gift Cards, Black Gold Color Gift Soccer Cards"
+    },
+    {
+        image: "blue.jpg",
+        url: "https://www.etsy.com/listing/1329116726/special-fifa-football-cards-fut-card",
+        desc: "Customizable FIFA 2023 football card Black Gold Fut Card, Fifa Card 2023. The designs will be sent to you in 3 formats of your choice. Formats include, JPG,PNG and PDF",
+        title: "Special Fifa Football Cards, Fut Card High Definition, Special Gift Cards, Special Days Gift Cards, Blue Gold Color Gift Soccer Cards"
+    },
+]
+
+shopListing.forEach(e => {
+    return shopList.innerHTML += `
+    <div class="card text-black mt-2">
+  <a href="${e.url}"><img class="card-img-top" src="./image/shop/${e.image}" alt="${e.title}"></a>
+  <div class="card-body p-1">
+    <h5 class="card-title" style="font-size:12px!important"> <a href="${e.url}">${e.title}</a></h5>
+  </div>
+</div>
+    
+    `
+})
 
 formSub.addEventListener("submit", (e) => {
     arr = []
@@ -100,4 +140,3 @@ unlem.onmouseout = e => {
     countries.innerHTML += countriesData.map(item => `<option value="${item.alpha3}">${item.name}</option>`)
 
 }())
-
