@@ -73,6 +73,17 @@
                     <option value="RW">RW</option>
                     <option value="LW">LW</option>
                   </select>
+                  <label for="countries" class=" mt-2">Select Country</label>
+                <select name="countries" id="countries" class="form-control" style="width: 100%;">
+                </select>
+                  <label for="cards" class="mt-2">Select Card</label>
+                <select name="cards" id="cards" class="form-control" style="width: 100%;">
+                  <option value="black-gold">Black Gold</option>
+                  <option value="gold">Gold</option>
+                   <option value="blue-gold">Blue Gold</option>
+                   <option value="champions-league-black">Champions League Black</option>
+                   <option value="champions-league-blue">Champions League Blue</option>
+                  </select>
             </div>
             <div class="button">
                 <input type="submit" value="Generate Point" class="btn btn-success"></input>
@@ -83,12 +94,15 @@
       <div class="main">
         <div class="design">
             <div class="image">
-                <img src="./image/soccer-card-default.png" alt="image">
+                <img src="./image/soccer-card-default.png" alt="image" id="defaultimage">
                
                 <div class="selected-values">
                     <div class="selected-values-top">
-                    <div class="total-score" id="total-score" style="font-size: 40px;"></div>
+                    <div class="left-selected-values">
+                      <div class="total-score" id="total-score" style="font-size: 40px;"></div>
                     <div class="position" id="pozisyon" style="font-size: 30px;"></div>
+                    <div class="country-flag" id="countryflag" style="font-size: 30px;"></div>
+                    </div>
                     <img id="frame-blah" src="#" alt=" " style="display: none;"/>
                     </div>
                     <div class="selected-values-bottom row">

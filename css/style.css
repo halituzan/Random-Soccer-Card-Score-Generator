@@ -118,13 +118,14 @@ a:active {
 .selected-values-top {
   height: 66%;
   width: 100%;
+  padding-left: 39px;
   color: gold;
   display: flex;
   text-align: center;
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  padding-left: 48px;
+
 }
 .selected-values-bottom {
   color: gold;
@@ -158,7 +159,7 @@ a:active {
 #frame-blah {
   position: absolute;
   left: 92px;
-  top: 80px;
+  top: 76px;
 }
 .selected-values-top img {
   object-fit: cover;
