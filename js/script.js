@@ -1,4 +1,6 @@
 let formSub = document.getElementById("formSub")
+let sidebar = document.querySelector(".sidebar")
+let hamMenu = document.querySelector(".hamburger-menu")
 let pac = document.getElementById("pac")
 let sho = document.getElementById("sho")
 let pas = document.getElementById("pas")
@@ -17,6 +19,8 @@ let countryFlag = document.querySelector("#countryflag")
 let defaultimage = document.querySelector("#defaultimage")
 let shopList = document.querySelector(".shop-list")
 let card = document.getElementsByClassName("card")
+let showmenu = document.getElementById("showmenu")
+
 let arr = []
 let countriesData = []
 
@@ -114,7 +118,11 @@ formSub.addEventListener("submit", (e) => {
         frameBlah.src = URL.createObjectURL(file);
         frameBlah.style.display = "block";
     }
-
+    console.log(window.innerWidth)
+    if (window.innerWidth < 900) {
+        sidebar.style.display = "none"
+        hamMenu.style.display = "block"
+    }
 
 
 })
@@ -131,6 +139,11 @@ unlem.onmouseover = e => {
 }
 unlem.onmouseout = e => {
     uyari.style.display = "none"
+}
+showmenu.onclick = () => {
+    sidebar.style.display = "block"
+    hamMenu.style.display = "none"
+
 }
 
 (async function () {

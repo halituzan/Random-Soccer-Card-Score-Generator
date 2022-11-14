@@ -1,0 +1,57 @@
+@media screen and (max-width: 900px) {
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  .sidebar {
+    width: 100% !important;
+    max-width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    display: none;
+  }
+  .shop {
+    /* display: none; */
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+  }
+  .shop h3 {display: none;}
+  .shop-list {
+    display: flex;
+    height: 100%;
+  }
+  .shop-list .card {
+    margin-right: 10px;
+  }
+  .card-title{
+    color: white!important;
+  }
+  .hamburger-menu {
+    display: block;
+    padding: 15px;
+    background-color: white
+  }
+  .hamburger-menu img{
+    width: 15px;
+    cursor: pointer;
+  }
+  .main {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .wrapper{
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: self-start;
+  }
+  .uyari{
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+  }
+}
