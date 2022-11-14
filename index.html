@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Fifa Card Values</title>
+    <link rel="stylesheet" href="./css/bootstrap.rtl.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+   
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="sidebar">
+        <form id="formSub">
+          
+          <div class="max-min">
+            <div class="img-upload">
+              <!-- <input type="file" name="imagePerson" id="imagePerson">
+              <img id="blah" src="#" alt="image" /> -->
+            
+              <div class="input-group mb-3 mt-2 d-flex justify-content-center align-items-center">
+                <label class="input-group-text rounded d-flex" for="imagePerson">Upload Image </label>
+                <span class="unlem ms-1"> ! 
+                <span class="uyari fw-bold" style="display: none;"> Please upload a square image with a transparent background.</span>  
+                
+                </span>
+                <input type="file" class="form-control d-none" id="imagePerson">
+               
+              </div>
+              <img id="blah" src="#" alt="image" style="display:none;" class="mt-1"/> 
+            </div>
+            <div class="max">
+              <label for="minNumber">Min Number</label>
+              <input
+                type="number"
+                name="minNumber"
+                id="minNumber"
+                class="form-control"
+                min="27"
+                max="99"
+              />
+            </div>
+            <div class="min">
+              <label for="minNumber">Max Number</label>
+              <input
+                type="number"
+                name="maxNumber"
+                id="maxNumber"
+                class="form-control"
+                min="27"
+                max="99"
+              />
+            </div>
+            <div class="positions">
+                <label for="position">Select Position</label>
+                <select name="position" id="position" class="form-control" style="width: 100%;">
+                    <option value="GK">GK</option>
+                    <option value="LWB">LWB</option>
+                    <option value="RWB">RWB</option>
+                    <option value="LB">LB</option>
+                    <option value="CB">CB</option>
+                    <option value="RB">RB</option>
+                    <option value="CDM">CDM</option>
+                    <option value="LM">LM</option>
+                    <option value="CM">CM</option>
+                    <option value="RM">RM</option>
+                    <option value="CAM">CAM</option>
+                    <option value="ST">ST</option>
+                    <option value="CF">CF</option>
+                    <option value="LF">LF</option>
+                    <option value="RF">RF</option>
+                    <option value="RW">RW</option>
+                    <option value="LW">LW</option>
+                  </select>
+            </div>
+            <div class="button">
+                <input type="submit" value="Generate Point" class="btn btn-success"></input>
+              </div>
+          </div>
+        </form>
+      </div>
+      <div class="main">
+        <div class="design">
+            <div class="image">
+                <img src="./image/soccer-card-default.png" alt="image">
+               
+                <div class="selected-values">
+                    <div class="selected-values-top">
+                    <div class="total-score" id="total-score" style="font-size: 40px;"></div>
+                    <div class="position" id="pozisyon" style="font-size: 30px;"></div>
+                    <img id="frame-blah" src="#" alt=" " style="display: none;"/>
+                    </div>
+                    <div class="selected-values-bottom row">
+                        <div class="pac col-6" id="pac"></div>
+                        <div class="sho col-6" id="sho"></div>
+                        <div class="pas col-6" id="pas"></div>
+                        <div class="dri col-6" id="dri"></div>
+                        <div class="def col-6" id="def"></div>
+                        <div class="phy col-6" id="phy"></div>
+                    </div>
+                 
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="shop">
+        <div class="head-shop">
+          <h3><a href="https://www.etsy.com/shop/NiceTech" rel="nofollow" target="_blank">Shop Now</a></h3>
+          <hr>  
+        </div>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
